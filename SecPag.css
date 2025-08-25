@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9+Charted&family=Jersey+25&family=Lobster&family=Pixelify+Sans:wght@400..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+#secPagConeiner
+{
+    align-items:end;
+    font-family: 'Jersey 25', sans-serif;
+    background-color: none;
+    height: 100%;
+    width: 66%;
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 80px;
+}
+
+#secPagConeiner section 
+{
+    height: 100%; 
+    width: 100%; 
+    position: relative;
+}
+
+#secPagConeiner section article
+{
+    height: 100%; 
+    width: 100%; 
+    position: relative;
+}
+
+
+.secPagList
+{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.secIconDirection
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+}
+
+.specialList
+{
+    display: flex;
+    width: 100%;
+}
+
+.secIconDirection:hover
+{
+    --enableTextSecIcon: transparent;
+    --hoverRefereneceImg:0%;
+    --hoverReferenceText:100%;
+}
+
+.secIconDirection img
+{
+    transition: 0.3s ease-in-out;
+    opacity: var(--hoverRefereneceImg,100%);
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.principalTextSecPag
+{
+    color: var(--enableTextSecIcon,white);
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.hiddenTextSecPagList
+{
+    color: white;
+    position: absolute;
+    opacity: var(--hoverReferenceText,0%);
+    transition: 0.3s ease-in-out;
+}
+
+.secIconDirection p
+{
+    font-size: 13px;
+    font-family: "Concert One", sans-serif;
+}
+
+.paddingIcon
+{
+    padding: 0px 8px 0px 8px;
+}
+
+.spaceIcon
+{
+    margin-top: 15px;
+}
+
+.marginIcon
+{
+ margin-right:7px ;
+}
+
+.aditionalSpaceIcon
+{
+ margin-bottom:15px ;
+}
+
+.colorDownload
+{
+    background-color: rgb(133, 182, 196);
+    width: 260px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.colorContexBlack
+{
+    background-color: rgb(30, 25, 21); 
+    width: 530px;
+}
+
+.colorContexWrite
+{
+    background-color: rgb(156, 118, 52);
+    width: 530px;
+}
+.colorSpecial
+{
+    background-color: var(--colorPropertySec,rgb(31, 31, 31)); 
+    width: 530px;
+}
+
+@media screen and (max-width:608px)
+{
+    #secPagConeiner
+    {
+    height: 100%;
+    width: 100%;
+    margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:408px)
+{
+    .colorContexBlack
+    {
+    width: 100%;
+    }
+
+    .colorContexWrite
+    {
+    width: 100%;
+    }
+    .colorSpecial
+    {
+    width: 100%;
+    }
+    .secPagList
+    {
+        height: 80%;
+        width: 80%;
+    }
+    #secPagConeiner section
+    {
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+    }
+}

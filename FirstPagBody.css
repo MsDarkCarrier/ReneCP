@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html
+{
+scroll-behavior: smooth;
+}
+
+header
+{
+    animation-name: InitPagOne;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    margin: 0%;
+}
+
+#conteinerSections
+{
+   margin: 0%;
+   padding: 0%;
+   position: relative;
+   padding: 35px;
+   animation-name: InitPagOne;
+   animation-duration: 0.8s;
+   animation-timing-function: linear;
+}
+
+.xd
+{
+    margin-top: 150px;
+}
+
+#conteinerSections section
+{
+    display:flex;
+    flex-flow: row wrap ;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 0px;
+}
+
+#Title
+{
+    font-size: 65px; 
+    display: inline-block; 
+    background-clip: text; 
+    color: transparent; 
+    background-color: rgb(30, 25, 21);
+    font-weight: bold;
+}
+
+#imageConteinerSection
+{
+    position: relative;
+    height: 100%;
+    width: 27%;
+    margin-right: 5%;
+
+}
+
+#imageConteinerSection div
+{
+    display: flex;
+    padding: 11px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#botCv
+{
+    position: relative;
+    display: flex;
+    background: rgb(230, 230, 230);
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 15%;
+    font-size: 28px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    cursor: pointer;
+}
+#botCv a
+{
+    position: absolute;
+    margin: -10px 0px 0px -12px;
+    opacity: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    background-color: aliceblue;
+}
+
+#botCv::after
+{
+    content: 'DESCARGA MI CV';
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(30, 25, 21);
+    color: rgb(230, 230, 230);
+    margin-top: -20px;
+    margin-left: -20px;
+    padding: 10px;
+    border-radius: 15%;
+    transition: 0.5s ease-out;
+}
+
+#botCv:hover::after
+{
+    color: transparent;
+    width: 0%;
+    opacity: 0;
+}
+
+#botCv::before
+{
+    content: 'DESCARGA MI CV';
+    display: flex;
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0%;
+    opacity: 0%;
+    margin-top: -18px;
+    margin-left: -20px;
+    padding: 10px;
+    border-radius: 15%;
+    transition: 0.3s ease-in;
+}
+
+#botCv:hover::before
+{
+    width: 100%;
+    color:rgb(31, 31, 31) ;
+    opacity: 100%;
+    
+}
+
+#imageConteinerSection img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#infoConteinerPanelSection
+{
+    position: relative;
+    height: 100%;
+    width: 66%;
+}
+
+#infoConteinerPanelSection div
+{
+   height: 100%;
+   width: 100%;
+   padding: 12px;
+   margin-bottom: 80px;
+
+}  
+
+.textColor
+{
+    background: rgb(30, 25, 21);
+    background-clip: text;
+    color: transparent;
+}
+
+
+#adicionalTextUl
+{
+    font-size: 22px;
+    margin-bottom: 60px;
+}
+
+.spaceTextConteiner
+{
+  user-select: none;
+  background-color: rgb(30, 25, 21);
+  padding: 3px;
+  color: rgba(240, 248, 255, 0);
+}
+
+#divSkills
+{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
+}
+
+#divSkills ul
+{
+    
+    display: flex;
+    flex-flow: column wrap;
+    list-style:circle;
+    height: 33%;
+    width: 33%;
+    text-align: start;
+    margin: 0%;
+    padding: 0%;
+    font-size: 18px;
+}
+
+.spacingli
+{
+    margin-top: 8px;
+}
+
+#conteinerBallsInformations
+{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+#conteinerBallsInformations li
+{ 
+    display: flex;
+    height: 25%;
+    width: 25%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}   
+
+#conteinerBallsInformations li button
+{
+    text-align: center;
+    height: 100%;
+    width: 70%;
+    padding: 0%;
+    border-radius:50%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#conteinerBallsInformations li button img
+{
+    height: 60%;
+    width: 60%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    user-select: none;
+}
+
+.adicionalSpaceList
+{
+    
+}
+
+
+#firstBallColor
+{
+    background-color: var(--ballColorOne,rgb(213, 161, 71));
+}
+
+#secondBallColor
+{
+    background-color:var(--ballColorTwo,rgb(213, 161, 71));
+}
+
+#treBallColor
+{
+    background-color: var(--ballColorTre,rgb(30, 25, 21));
+}
+
+#fourBallCollor 
+{
+    background-color: var(--ballColorForur,rgb(30, 25, 21));
+}
+
+.blackStyle
+{
+    color: rgb(213, 161, 71);
+    transition: 0.15s ease-in-out;
+    cursor:pointer;
+    user-select: none;
+    font-size: 33px;
+}
+
+.blackStyle .blackImgBall
+{
+ display: var(--ballDisableBlackStyle,none);
+}
+
+.blackStyle .writeImgBall
+{
+ display: var(--ballActiveBlackStyle,auto);
+}
+
+.blackStyle:hover
+{
+    color: rgb(30, 25, 21);
+    --ballColorForur:rgb(213, 161, 71);
+    --ballColorTre:rgb(213, 161, 71);
+    font-size: 30px;
+    --ballDisableBlackStyle:auto;
+    --ballActiveBlackStyle:none;
+}
+
+.writeStyle
+{
+    color: rgb(30, 25, 21);
+    transition: 0.15s ease-in-out;
+    cursor:pointer;
+    user-select: none;
+    font-size: 33px;
+}
+
+.writeStyle .writeImgBall
+{
+    display: var(--ballDisableWriteStyle,none);
+}
+
+.writeStyle .blackImgBall
+{
+    display: var(--ballActiveWriteStyle,auto);
+}
+
+.writeStyle:hover
+{
+    --ballColorTwo:rgb(36, 29, 24);
+    --ballColorOne:rgb(30, 25, 21);
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    --ballDisableWriteStyle:auto;
+    --ballActiveWriteStyle:none;
+}
+
+
+
+@keyframes InitPagOne
+{
+    from
+    {
+        opacity: 0%;
+        margin-top: -50px;
+    }
+
+    to
+    {
+        opacity: 100%;
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width:1410px)
+{
+    #conteinerBallsInformations li div
+    {
+    font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1068px)
+{
+    #imageConteinerSection
+    {
+    width: 65%;
+    margin: 0%;
+    margin-bottom: -50px;
+    }
+    #imageConteinerSection div
+    {
+    padding: 8px;
+    }
+
+    #conteinerSections section
+    {
+    display: flex;
+    flex-flow: column wrap ;
+    align-items: center;
+    }
+    #infoConteinerPanelSection
+    {
+        width: 100%;
+        text-align: center;
+    }
+    #infoConteinerPanelSection div
+    {
+        padding-left: 0px;
+    }
+
+    #divSkills ul
+    {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width:658px)
+{
+
+    #adicionalTextUl
+    {
+    text-align: center;
+    }
+
+    #conteinerBallsInformations li
+    { 
+        display: flex;
+        height: 50%;
+        width: 50%;
+    }   
+
+    #conteinerBallsInformations li div
+    {
+    font-size: 20px;
+    }
+
+    .adicionalSpaceList
+    {
+        margin-bottom: 50px;
+    }
+
+
+}
+
+
+@media screen and (max-width:500px)
+{
+    #imageConteinerSection
+    {
+    width: 90%;
+    }
+}
+

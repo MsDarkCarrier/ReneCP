@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#threePagConteiner
+{
+    display: flex;
+    font-family: "Kanit", sans-serif;
+    background-color: none;
+    height: 66%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 80px;
+    justify-content: start;
+    align-items: start;
+    flex-flow: column wrap;
+    margin: 0%;
+    padding: 0%;
+}
+
+#threePagConteiner section
+{
+    display: flex;
+    flex-flow: row wrap ;
+    height: 100%;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+}
+
+#threePagConteiner article
+{
+    position: relative;
+    background: rgb(230, 230, 230);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 0%;
+    height: 630px;
+    width: 450px;
+    padding: 10px;
+    align-items: center;
+}
+
+#threePagConteiner article p
+{
+    font-size: 30px;
+}
+
+.imgCard
+{
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    transition: 0.5 ease-in-out;
+    position: relative;
+    height: 150px;
+    width: 300px;
+}
+
+#threePagConteiner article a
+{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#threePagConteiner article a img
+{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+#threePagConteiner article a img:hover
+{
+    animation-name: SelectorThreeImgAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0%;
+}
+
+@keyframes SelectorThreeImgAnimation
+{
+    from
+    {
+        opacity: 100%;
+    }
+    to
+    {
+        opacity: 0%;
+    }
+}
+
+
+#threePagConteiner article ul
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 10px;
+}
+
+#threePagConteiner article ul li
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0%;
+
+}
+
+#threePagConteiner article  ul li p
+{
+    font-size: 11px;
+    font-family: "Concert One", sans-serif;
+}
+
+#threePagConteiner article  ul li img
+{
+    height: 15px;
+    width: 15px;
+    margin-right:7px ;
+}
+
+
+.spaccingCards
+{
+    margin-right: 50px;
+}
+
+.threeEducationPag
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.colorContextBlackThree
+{
+    background-color: rgb(31, 31, 31); 
+}
+.colorContextWhiteThree
+{
+    background-color: rgb(63, 63, 63);
+}
+
+.threeEducationPag img
+{
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.threeEducationPag p
+{
+    font-size: 20px;
+    font-family: "Concert One", sans-serif;
+    color: white;
+}
+
+.threeEducationPag div
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 2px;
+    padding-right: 10px;
+    margin: 0%;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.threeEducationPag div p
+{
+    font-size: 8px;
+    font-family: "Concert One", sans-serif;
+}
+
+.threeEducationPag div img
+{
+    height: 27px;
+    width: 27px;
+    margin-right: 5px;
+}
+@media screen and (max-width:1629px)
+{
+    #threePagConteiner article
+    {
+        margin-bottom: 40px;
+    }
+
+}
+@media screen and (max-width:761px)
+{
+    .threeEducationPag 
+    {
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
+    .threeEducationPag p
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:568px)
+{
+    #threePagConteiner article
+    {
+    height: 100%;
+    }
+
+    #threePagConteiner article ul li 
+    {
+        font-size: 0px;
+    }
+    #threePagConteiner article ul li p
+    {
+        display: none;
+        font-size: 0px;
+    }
+        #threePagConteiner article ul li img
+    {
+        margin-right: -1px;
+    }
+}
+
+@media screen and (max-width:381px)
+{
+    .imgCard
+    {
+    height: 0px;
+    width: 0px;
+    }
+    
+    #threePagConteiner
+    {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    }
+
+    #threePagConteiner section
+    {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    }
+}
