@@ -147,6 +147,22 @@
     }
 }
 
+@media screen and (max-width:430px)
+{
+    .secIconDirection img
+    {
+    height: 10px;
+    width: 10px;
+    }
+
+    .secIconDirection p
+    {
+    font-size: 9px;
+    }
+}
+
+
+
 @media screen and (max-width:408px)
 {
     .colorContexBlack
@@ -173,5 +189,13 @@
         align-items: center;
         margin: 0%;
         padding: 0%;
+    }
+}
+@media screen and (max-width:331px)
+{
+    .secIconDirection img
+    {
+    height: 0px;
+    width: 0px;
     }
 }
