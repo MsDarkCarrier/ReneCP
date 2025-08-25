@@ -6,13 +6,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'PixelFontTone';
-    src: url("Fuentes/Pixelfontone_regular-Regular.ttf");
-    font-weight: bold;
-    font-size: bold;
-}
-
 .stopScrolling {
     height: 100%;
     overflow: hidden;
